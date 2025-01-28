@@ -1,0 +1,8 @@
+opencv-python~=4.11.0.86
+numpy~=2.2.2
+imutils~=0.5.4
+pillow~=11.1.0
+scikit-image~=0.25.0
+transformers~=4.48.1
+torch~=2.5.1+cpu
+pytesseract~=0.3.13
