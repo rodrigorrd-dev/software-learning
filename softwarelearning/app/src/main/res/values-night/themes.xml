@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Softwarelearning" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!-- Cores principais -->
+        <item name="colorPrimary">@color/fox_orange</item>
+        <item name="colorPrimaryVariant">@color/fox_dark_orange</item>
+        <item name="colorOnPrimary">@color/black</item>
+
+        <!-- Cores secundárias -->
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorSecondaryVariant">@color/accent_cyan</item>
+        <item name="colorOnSecondary">@color/fox_white</item>
+
+        <!-- Fundo e superfícies escuras -->
+        <item name="android:colorBackground">@color/fox_dark</item>
+        <item name="colorSurface">@color/fox_dark</item>
+        <item name="colorOnSurface">@color/fox_white</item>
+
+        <!-- Barra de status -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Cor de dicas -->
+        <item name="android:textColorHint">@color/fox_white</item>
+    </style>
+
+    <!-- Tema sem ActionBar -->
+    <style name="Theme.Softwarelearning.NoActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Overlays -->
+    <style name="Theme.Softwarelearning.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+    <style name="Theme.Softwarelearning.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Dark" />
+
+    <!-- SplashScreen -->
+    <style name="Theme.SoftwareLearning.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@drawable/softwarelearning</item>
+        <item name="windowSplashScreenBackground">@color/cinza</item>
+        <item name="windowSplashScreenIconBackgroundColor">@color/cinza</item>
+        <item name="postSplashScreenTheme">@style/Theme.Softwarelearning</item>
+    </style>
+
+    <!-- Estilo da BottomNavigationView para dark -->
+    <style name="Widget.Softwarelearning.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="android:background">@color/fox_dark</item>
+        <item name="itemIconTint">@color/fox_white</item>
+        <item name="itemTextColor">@color/fox_white</item>
+    </style>
+</resources>

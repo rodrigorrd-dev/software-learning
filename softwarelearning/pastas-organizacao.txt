@@ -1,0 +1,22 @@
+src/main/kotlin/com/empresa/projeto/
+|
+├── domain/                 # Camada de domínio - regras de negócio puras
+│   ├── model/              # Entidades, Value Objects, enums
+│   ├── repository/         # Interfaces abstratas de repositório (portas)
+│   └── service/            # Lógica de negócio pura, sem dependências externas
+|
+├── application/            # Casos de uso, coordenação de serviços
+│   ├── service/            # UseCases ou Application Services
+│   └── dto/                # DTOs para entrada/saída de dahttps://chatgpt.com/c/68e0739c-8f20-832d-abc5-5c644ff43742dos
+|
+├── infrastructure/         # Implementações técnicas
+│   ├── repository/         # Implementações de banco, Firebase, API externa
+│   ├── network/            # Clientes REST, Retrofit, OkHttp
+│   ├── persistence/        # Configurações de banco de dados, migrations
+│   └── notifications/      # Email, push, SMS
+|
+├── ui/                     # Camada de apresentação
+│   ├── android/            # Fragments, Activities, Adapters, Views
+│   └── web/                # Controllers, templates, Angular/React
+|
+└── config/                 # Configurações do Spring, DI, beans

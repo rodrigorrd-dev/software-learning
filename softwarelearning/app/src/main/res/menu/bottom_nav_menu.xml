@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/menu_home" />
+
+    <item
+        android:id="@+id/navigation_curso"
+        android:icon="@drawable/ic_curso_black"
+        android:title="@string/menu_curso" />
+<!--    <item-->
+<!--        android:id="@+id/navigation_ai"-->
+<!--        android:icon="@drawable/ic_ai_black"-->
+<!--        android:title="@string/menu_ia" />-->
+    <item
+        android:id="@+id/navigation_atividade"
+        android:icon="@drawable/ic_atividade_black"
+        android:title="@string/menu_atividade" />
+    <item
+        android:id="@+id/navigation_chat_reposta_atividade_aluno"
+        android:icon="@drawable/ic_chat"
+        android:title="@string/menu_chat" />
+</menu>

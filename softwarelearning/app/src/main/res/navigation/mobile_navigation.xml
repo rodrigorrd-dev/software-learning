@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.academic.softwarelearning.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.academic.softwarelearning.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_gallery"
+        android:name="com.academic.softwarelearning.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery_sidebar"
+        tools:layout="@layout/fragment_gallery" />
+
+    <!--Esta errado o codigo abaixo-->
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.academic.softwarelearning.ui.notifications.NotificationsFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_curso"
+        android:name="com.academic.softwarelearning.ui.curso.CursoFragment"
+        android:label="@string/menu_curso"
+        tools:layout="@layout/fragment_curso" />
+
+    <fragment
+        android:id="@+id/navigation_ai"
+        android:name="com.academic.softwarelearning.ui.ia.IntegracaoFragment"
+        android:label="@string/menu_ia"
+        tools:layout="@layout/integracao_fragment" />
+
+    <fragment
+        android:id="@+id/navigation_atividade"
+        android:name="com.academic.softwarelearning.service.AtividadeFragment"
+        android:label="@string/menu_atividade"
+        tools:layout="@layout/fragment_atividade" />
+
+    <fragment
+        android:id="@+id/navigation_chat_reposta_atividade_aluno"
+        android:name="com.academic.softwarelearning.ui.resposta.aluno.RespostaAtividadeAlunoFragment"
+        android:label="@string/menu_chat"
+        tools:layout="@layout/fragment_resposta_atividade_aluno" />
+
+
+</navigation>

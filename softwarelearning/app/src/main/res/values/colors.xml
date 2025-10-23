@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fox_dark_orange">#D8471F</color>
+    <color name="fox_white">#FFFFFF</color>
+    <color name="fox_dark">#2C2C2C</color>
+
+    <color name="accent_blue">#3DAAFF</color>
+    <color name="accent_cyan">#00D4FF</color>
+
+
+    <color name="black">#FF000000</color>
+    <color name="cinza">#303030</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="default_color">#D8471F</color>
+    <color name="secundary_color">#FFFFFF</color>
+    <color name="hint_color">#F26522</color>
+    <color name="fox_orange">#F26522</color>
+    <color name="colorCardBackground">#FAFAFA</color>
+
+    <color name="active_indicator_bg">#FFF1E9</color> <!-- laranja bem claro -->
+    <color name="colorCardSelected">#FFD5BE</color> <!-- laranja bem claro -->
+
+</resources>

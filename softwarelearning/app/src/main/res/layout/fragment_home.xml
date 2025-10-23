@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- RecyclerView para listar as atividades -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerAtividades"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancelarSelecao"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="X"
+        android:visibility="gone"
+        android:layout_gravity="end"
+        android:layout_margin="16dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        app:cornerRadius="24dp"
+        android:backgroundTint="@color/design_default_color_error"
+        app:icon="@null"
+        app:rippleColor="@android:color/white"
+        android:stateListAnimator="@null"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <!-- Botão X para fechar/remover -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnFechar"
+        android:layout_width="48dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:backgroundTint="@color/design_default_color_error"
+        android:stateListAnimator="@null"
+        android:text="X"
+        android:textColor="@android:color/white"
+        app:cornerRadius="18dp"
+        app:icon="@null" />
+
+    <!-- EditText para digitar resposta em texto -->
+    <EditText
+        android:id="@+id/edtRespostaTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua resposta"
+        android:visibility="gone"/>
+
+    <!-- Botão para adicionar arquivo -->
+    <Button
+        android:id="@+id/btnAdicionarArquivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar Arquivo"
+        android:visibility="gone"/>
+
+    <!-- Botão para enviar a resposta -->
+    <Button
+        android:id="@+id/btnEnviarResposta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Resposta"
+        android:visibility="gone"/>
+
+    <!-- Texto de sucesso (aparece após enviar) -->
+    <TextView
+        android:id="@+id/txtIaResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Parabéns pelo aprendizado!"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:visibility="gone"
+        android:gravity="center"
+        android:paddingTop="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerArquivos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <!-- indicador de loading -->
+    <ProgressBar
+        android:id="@+id/progressAguarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/txtAguarde"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Aguarde..."
+        android:visibility="gone"/>
+
+</LinearLayout>

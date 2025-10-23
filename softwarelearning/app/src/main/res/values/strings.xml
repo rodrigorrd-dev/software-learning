@@ -1,0 +1,34 @@
+<resources>
+    <!--UTEIS-->
+    <string name="app_name">SoftwareLearning</string>
+    <string name="title_activity_navigationdrawio">Navigationdrawio</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuracoes</string>
+    <string name="editar">editar</string>
+    <string name="deletar">deletar</string>
+
+    <!--SIDEBAR-->
+    <string name="menu_home_sidebar">Tela Inicial</string>
+    <string name="menu_gallery_sidebar">Galeria</string>
+
+    <!--MENU-->
+    <string name="menu_home"></string>
+    <string name="menu_dashboard">Dashboard</string>
+    <string name="menu_ia"></string>
+    <string name="menu_atividade"></string>
+    <string name="menu_chat"></string>
+    <string name="menu_curso"></string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="default_web_client_id">236345586636-6ljg9556kg9r0pkbi58me6etq1fc71r8.apps.googleusercontent.com</string>
+    <string-array name="status_array">
+        <item>Selecione o Status</item>
+    </string-array>
+
+    <string-array name="curso_array">
+        <item>Selecione o Curso</item>
+    </string-array>
+</resources>
