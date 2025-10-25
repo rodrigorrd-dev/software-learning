@@ -59,6 +59,8 @@ O desenvolvimento do **SoftwareLearning** utilizou ferramentas consolidadas no m
 
 ## Tecnologias Utilizadas
 
+<div align="justify">
+  
 O projeto combina tecnologias modernas para garantir um sistema robusto, modular e preparado para produção:
 
 - **📱 Java & Kotlin (Mobile)**: Desenvolvimento do front-end mobile do aplicativo.  
@@ -72,9 +74,13 @@ O projeto combina tecnologias modernas para garantir um sistema robusto, modular
 - **☁️ Render**: Deploy de microsserviços e banco de dados, garantindo escalabilidade e acesso remoto.  
 - **💻 Git & GitHub**: Controle de versão e colaboração no desenvolvimento do projeto.  
 
+<div>
+
 ---
 
 ## Diferenciais do Projeto
+
+<div align="justify">
 
 - Arquitetura escalável e modular com microsserviços REST e DDD.  
 - Suporte a múltiplos usuários em produção, com autenticação e permissões robustas.  
@@ -83,25 +89,38 @@ O projeto combina tecnologias modernas para garantir um sistema robusto, modular
 - Deploy em nuvem via Render, com banco PostgreSQL, permitindo acesso remoto seguro.  
 - Integração com Firebase para gerenciamento de dados em tempo real e autenticação.
 
+<div>
+
 ---
 
 ## Vídeo de usabilidade do prototipo
 
+<div align="justify">
+  
 Assista ao vídeo de apresentação do **SoftwareLearning** no Google Drive:
 
 [🎬 Vídeo de Apresentação](https://drive.google.com/file/d/1fkCPS3hMSwyqcx8ow864Uojjy3c7uN7x/view?usp=sharing)
 
+<div>
 
 ---
 
 ## Download do App
 
+<div align="justify">
+
 Você pode baixar a versão **1.0.0** do aplicativo na página de releases do GitHub:
 
 [🔗 Download SoftwareLearning v1.0.0](https://github.com/rodrigorrd-dev/software-learning/releases/tag/v1.0.0)
+
+<div>
 
 ---
 
 ## Licença
 
+<div align="justify">
+  
 Este projeto é de caráter acadêmico e pode ser utilizado e adaptado para fins educacionais.
+
+<div>
