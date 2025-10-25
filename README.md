@@ -49,14 +49,16 @@ O desenvolvimento do **SoftwareLearning** utilizou ferramentas consolidadas no m
 
 O projeto combina tecnologias modernas para garantir um sistema robusto, modular e preparado para produção:
 
-- **[Android SDK](https://developer.android.com/studio/releases/sdk-tools)**: Desenvolvimento do front-end mobile com Java e Kotlin, utilizando Gradle para gerenciamento de dependências.  
-- **[Python](https://www.python.org/)**: Implementação da lógica central dos microsserviços, incluindo automação e integração com inteligência artificial.  
-- **[OpenRouter GPT](https://openrouter.ai/)**: Modelo de IA utilizado para processamento de atividades, geração de feedbacks e análises automatizadas.  
-- **[PostgreSQL](https://www.postgresql.org/)**: Banco de dados relacional em nuvem para armazenamento seguro de informações acadêmicas e registros do sistema.  
-- **[Render](https://render.com/)**: Deploy de microsserviços e banco de dados, garantindo escalabilidade, disponibilidade e acesso remoto para múltiplos usuários.  
-- **[Firebase (Google)](https://firebase.google.com/)**: Autenticação de usuários, armazenamento seguro e gerenciamento de informações em tempo real, integrando login, permissões e dados acadêmicos.  
-- **[OpenCV](https://opencv.org/)**: Processamento de imagens enviado pelos alunos, como leitura automatizada de gabaritos, garantindo precisão e rapidez.  
-- **[Git & GitHub](https://git-scm.com/)**: Controle de versão e colaboração no desenvolvimento do projeto.
+- **📱 Java & Kotlin (Mobile)**: Desenvolvimento do front-end mobile do aplicativo.  
+- **⚡ Python (FastAPI)**: Implementação da lógica central dos microsserviços, incluindo automação e integração com IA.  
+- **☕ Spring Boot (Java)**: Desenvolvimento de APIs robustas e escaláveis para comunicação entre microsserviços.  
+- **🗄 PostgreSQL**: Banco de dados relacional para armazenamento seguro de informações acadêmicas.  
+- **🔄 Firebase Realtime Database**: Armazenamento de dados em tempo real para acompanhamento do progresso das atividades.  
+- **🔒 Firebase Authentication**: Gerenciamento seguro de autenticação e permissões de usuários.  
+- **🤖 OpenRouter GPT**: Integração com modelo de IA para feedbacks automáticos.  
+- **🖼 OCR.space API**: Processamento de imagens enviadas pelos alunos, como leitura automatizada de gabaritos.  
+- **☁️ Render**: Deploy de microsserviços e banco de dados, garantindo escalabilidade e acesso remoto.  
+- **💻 Git & GitHub**: Controle de versão e colaboração no desenvolvimento do projeto.  
 
 ---
 
