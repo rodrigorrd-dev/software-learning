@@ -6,30 +6,42 @@
 
 ## Sobre o Projeto
 
+<div align="justify">
+  
 O **SoftwareLearning** é um aplicativo educacional desenvolvido com o objetivo de apoiar atividades acadêmicas no ensino superior. Ele oferece uma plataforma intuitiva para a interação entre alunos e orientadores, permitindo o acompanhamento contínuo da criação de questões, análise de respostas e feedbacks ao longo do semestre letivo.
 
 Com o suporte de inteligência artificial, o sistema otimiza processos manuais, reduz o tempo de correção e fornece feedbacks rápidos e contextualizados, promovendo um ambiente dinâmico e colaborativo para o ensino e aprendizagem.
 
+<div>
+  
 ---
 
 ## Sobre o Software
 
+<div align="justify">
+  
 O **SoftwareLearning** foi projetado para cursos de Engenharia de Software e Segurança da Informação, oferecendo suporte tanto ao envio quanto ao acompanhamento de atividades acadêmicas. A ferramenta auxilia na compreensão de conteúdos fundamentais, como Programação Orientada a Objetos e Algoritmos, e permite um acompanhamento detalhado do progresso dos alunos ao longo do semestre.
 
 Com foco em automação, integração com serviços inteligentes e uma interface acessível, o aplicativo busca modernizar o ensino, promovendo organização, autonomia e eficiência.
 
+<div>
+
 ## Aspectos Técnicos do Aplicativo
 
+<div align="justify">
+  
 A arquitetura do **SoftwareLearning** segue o modelo de **microsserviços REST**, garantindo que cada serviço funcione de forma independente, escalável e desacoplada. Essa abordagem facilita manutenção, evolução modular do sistema e distribuição de responsabilidades entre os componentes.
 
 O sistema também adota os princípios do **Domain-Driven Design (DDD)**, separando claramente camadas e responsabilidades, o que garante maior organização, reutilização de componentes e clareza no fluxo de dados e processos. Essa estratégia contribui para a robustez, flexibilidade e adaptabilidade da aplicação em ambientes acadêmicos dinâmicos.
 
+<div>
+  
 ---
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cbbd5d67-4cc9-4b00-845c-597651aa60a4" width="300" alt="1"/>
-  <img src="https://github.com/user-attachments/assets/a52ec4f4-cc50-4cd7-b7a8-60fb2e2f46cd" width="300" alt="3"/>
-  <img src="https://github.com/user-attachments/assets/2b83d308-0738-4747-a92b-f58fd94ef074" width="300" alt="4"/>
+  <img src="https://github.com/user-attachments/assets/cbbd5d67-4cc9-4b00-845c-597651aa60a4" width="250" alt="1"/>
+  <img src="https://github.com/user-attachments/assets/a52ec4f4-cc50-4cd7-b7a8-60fb2e2f46cd" width="250" alt="3"/>
+  <img src="https://github.com/user-attachments/assets/2b83d308-0738-4747-a92b-f58fd94ef074" width="250" alt="4"/>
 </p>
 
 ---
