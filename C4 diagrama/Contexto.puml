@@ -1,0 +1,18 @@
+@startuml
+' Incluir a biblioteca C4 Context de forma estável
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+
+' Definição de atores
+Person(aluno, "Aluno", "Envia atividades (texto e imagem), recebe feedbacks e usa o chat.")
+Person(orientador, "Orientador", "Acompanha alunos, revisa respostas, cadastra atividades e valida IA.")
+
+' Sistema com boundary
+System_Boundary(sys, "SoftwareLearning") {
+    System(softwarelearning, "SoftwareLearning", "Plataforma de aprendizagem com IA para correção automática, envio de atividades e interação aluno-orientador.")
+}
+
+' Relacionamentos
+Rel(aluno, softwarelearning, "Usa", "HTTPS")
+Rel(orientador, softwarelearning, "Usa", "HTTPS")
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml
+' Inclusão das bibliotecas C4 necessárias
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+' Sistema principal
+System_Boundary(sys, "SoftwareLearning") {
+
+    ' Container Spring Boot: API de gerenciamento
+    Container(springApi, "SoftwareLearning API", "Java Spring Boot", "Gerencia usuários, cursos, atividades e arquivos.") {
+
+        Component(authCtrl, "AuthController", "Controller", "Login, tokens e gerenciamento de sessão do usuário.")
+        Component(userCtrl, "UserController", "Controller", "Consulta dados do aluno/orientador.")
+        Component(courseCtrl, "CourseController", "Controller", "Cadastro e gerenciamento de cursos e permissões.")
+        Component(activityCtrl, "ActivityController", "Controller", "Criação de atividades, associação e listagem.")
+        Component(answerCtrl, "AnswerController", "Controller", "Recebe respostas e aciona IA.")
+        Component(chatCtrl, "ChatController", "Controller", "Integra com módulo de chat em tempo real.")
+
+        Component(activityService, "ActivityService", "Service", "Regras de negócio das atividades.")
+        Component(answerService, "AnswerService", "Service", "Gerencia respostas e histórico.")
+        Component(repoLayer, "Repositories", "Repository", "Camada de persistência (ORM/SQL).")
+    }
+
+    ' Container FastAPI: microserviço corujao
+    Container(fastApi, "Corujao Service", "Python FastAPI", "Processamento de OCR e avaliação automática.") {
+        Component(aiService, "AIService", "Service", "Integra OCR + LLM para gerar feedback automático.")
+        Component(ocrAdapter, "OCRAdapter", "Service", "Interface com OpenCV / OCR.space: binarização e extração de texto.")
+        Component(promptBuilder, "PromptBuilder", "Service", "Constrói prompts para o modelo LLM com critérios do orientador.")
+        Component(llmClient, "LLMClient", "Service", "Cliente HTTP para enviar texto ao modelo de IA.")
+        Component(feedbackParser, "FeedbackParser", "Service", "Interpreta a resposta do modelo e converte em estrutura JSON.")
+        Component(rulesEngine, "RulesEngine", "Service", "Valida critérios pedagógicos e aplica regras extras do orientador.")
+    }
+
+    ' Containers externos
+    ContainerDb(postgres, "PostgreSQL", "Relational DB", "Armazena dados acadêmicos de forma segura e estruturada.")
+    ContainerDb(firebase, "Firebase Realtime DB", "NoSQL DB", "Sincroniza dados em tempo real entre módulos.")
+}
+
+' Relações internas Spring Boot
+Rel(authCtrl, repoLayer, "Consulta usuário")
+Rel(activityCtrl, activityService, "Delegação")
+Rel(answerCtrl, answerService, "Delegação")
+Rel(answerCtrl, fastApi, "Solicita correção automática")
+Rel(fastApi, repoLayer, "Salva feedback")
+
+' Relações externas
+Rel(springApi, postgres, "Lê/Grava dados")
+Rel(springApi, firebase, "Sincroniza dados em tempo real")
+Rel(fastApi, firebase, "Consulta ou atualiza status/feedbacks")
+
+' Relações internas FastAPI
+Rel(aiService, ocrAdapter, "Extrai texto da imagem")
+Rel(aiService, promptBuilder, "Gera prompt")
+Rel(aiService, llmClient, "Envia texto ao modelo")
+Rel(llmClient, aiService, "Retorna análise da IA")
+Rel(aiService, feedbackParser, "Processa retorno")
+Rel(aiService, rulesEngine, "Aplica regras finais pedagógicas")
+
+@enduml

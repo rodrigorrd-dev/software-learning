@@ -1,0 +1,34 @@
+@startuml
+' Inclusão das bibliotecas C4
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml
+!includeurl https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+' Definição de atores
+Person(aluno, "Aluno")
+Person(orientador, "Orientador")
+
+' Sistema com containers
+System_Boundary(sys, "SoftwareLearning") {
+
+    Container(app_mobile, "Aplicativo Mobile", "Kotlin", "Interface do Aluno para envio de respostas, histórico, chat e feedbacks.")
+    Container(api_backend, "API Backend", "Python FastAPI / Java Spring Boot", "Autenticação, envio de atividades, processamento, integração com IA e persistência.")
+    Container(ai_module, "Módulo de IA", "Python + OpenCV + Modelos LLM", "OCR, correção automática, interpretação de respostas e geração de feedback.")
+    ContainerDb(database, "Banco de Dados", "PostgreSQL / Firebase", "Usuários, cursos, atividades, respostas, chat e feedbacks.")
+    Container(realtime_chat, "Módulo de Chat Realtime", "Firebase Realtime DB / WebSocket", "Chat síncrono entre Aluno e Orientador.")
+}
+
+' Relacionamentos
+Rel(aluno, app_mobile, "Usa")
+Rel(orientador, app_mobile, "Usa")
+
+Rel(app_mobile, api_backend, "Envia respostas, recebe feedback")
+
+Rel(api_backend, ai_module, "Envia imagens/texto para análise")
+Rel(ai_module, api_backend, "Retorna feedback automático")
+
+Rel(api_backend, database, "Lê/Escreve")
+Rel(api_backend, realtime_chat, "Publica/consome mensagens")
+
+Rel(aluno, realtime_chat, "Chat")
+Rel(orientador, realtime_chat, "Chat")
+@enduml
